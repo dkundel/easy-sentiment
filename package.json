@@ -1,0 +1,41 @@
+{
+  "name": "easy-sentiment",
+  "version": "1.0.0",
+  "description": "A tiny wrapper around the Microsoft Cognitive Services API for Sentiment analysis",
+  "source": "src/index.js",
+  "main": "dist/easy-sentiment.js",
+  "umd:main": "dist/easy-sentiment.umd.js",
+  "module": "dist/easy-sentiment.mjs",
+  "scripts": {
+    "dev": "microbundle watch",
+    "build": "microbundle",
+    "start": "nodenv example.js -f",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkundel/easy-sentiment.git"
+  },
+  "keywords": [
+    "microsoft",
+    "sentiment",
+    "azure"
+  ],
+  "author": "Dominik Kundel <dominik.kundel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkundel/easy-sentiment/issues"
+  },
+  "homepage": "https://github.com/dkundel/easy-sentiment#readme",
+  "devDependencies": {
+    "microbundle": "^0.6.0",
+    "node-env-run": "^3.0.2"
+  },
+  "dependencies": {
+    "got": "^9.2.2"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ]
+}
